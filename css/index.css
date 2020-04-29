@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700");
+
 *{
     margin: 0;
     padding: 0;
@@ -367,6 +369,122 @@ a{
 }
 
 /*Team Section Ends Here*/
+
+/*Testimonials Starts Here*/
+#testimonials {
+  background: #ffbf02;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+#testimonials .wrapper {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+  width: 950px;
+  border-radius: 10px;
+  box-shadow: 0 -15px 45 rgba(0, 0, 0, 0.1);
+}
+#testimonials h1{
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    margin-right: 2em;
+}
+
+#testimonials .testi {
+  display: flex;
+  padding: 50px 60px;
+}
+
+#testimonials .wrapper .testi .client {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+#testimonials .wrapper .testi .client:nth-child(2) {
+  margin: 0 25px;
+}
+
+#testimonials .wrapper .testi .client .say .border {
+  width: 0%;
+  height: 4px;
+  background: #ffbf02;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  transition: all 600ms cubic-bezier(1, -0.32, 0, 0.92);
+}
+
+#testimonials .wrapper .testi .client .say h3 {
+  font-weight: bold;
+  margin: 60px 0;
+  font-size: 18px;
+  line-height: 1.5;
+  transform: translateY(-200px);
+  transition: all 550ms cubic-bezier(1, 0.1, 0, 1.04);
+}
+
+#testimonials .wrapper .testi .client.show .say .border {
+  width: 100%;
+}
+
+/* When add class show display the h3 element */
+
+#testimonials .wrapper .testi .client.show .say h3 {
+  transform: translateY(0);
+}
+
+#testimonials .wrapper .testi .client .profile {
+  background: #fff;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  transition: all 250ms;
+  cursor: pointer;
+}
+
+#testimonials .wrapper .testi .client .profile:hover {
+  background: #1d1c1d;
+}
+
+#testimonials .wrapper .testi .client .profile:hover .info h3 {
+  color: #fff;
+}
+
+#testimonials .wrapper .testi .client .profile .img {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+#testimonials .wrapper .testi .client .profile .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+#testimonials .wrapper .testi .client .profile .info {
+  font-size: 12px;
+}
+
+#testimonials .wrapper .testi .client .profile .info small {
+  color: #bdbdbd;
+}
+/*Testimonials Ends Here*/
+
 
 /*Footer Starts Here*/
 #footer{
